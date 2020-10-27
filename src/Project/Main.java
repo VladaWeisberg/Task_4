@@ -26,7 +26,7 @@ public class Main {
     private static double findSumSeriesWithRoot(int n, double x)
     {
         double sum = 0;
-        double root = findSquareRootX(x) * n;
+        double roots = findSquareRootX(x) * n;
 
         for (int i = 1; i <= n; i++)
         {
@@ -35,7 +35,7 @@ public class Main {
             sum = sum + fact;
         }
 
-        return sum + root;
+        return sum + roots;
     }
 
     private static double findMultiplicationSeriesWithSin(int n, double x)
